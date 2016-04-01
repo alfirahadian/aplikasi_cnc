@@ -1,0 +1,11 @@
+/* Empty. Add your own CSS if you like */
+.pane {
+    background-color: #FFFFFF;
+    font-family: Roboto;
+}
+
+.item {
+  font-family: Calibri;
+  background-color: #ECF0F1;
+  border-color: white;
+}

@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/alfirahadian/Documents/Ionic/aplikasi_cnc/platforms/ios/aplikasi_cnc/Plugins/cordova-plugin-device/CDVDevice.m \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDV.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVAvailabilityDeprecated.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVViewController.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVDebug.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVTimer.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h \
+  /Users/alfirahadian/documents/ionic/aplikasi_cnc/platforms/ios/build/emulator/include/Cordova/CDVJSON.h \
+  /Users/alfirahadian/Documents/Ionic/aplikasi_cnc/platforms/ios/aplikasi_cnc/Plugins/cordova-plugin-device/CDVDevice.h

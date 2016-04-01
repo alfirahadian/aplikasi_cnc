@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter" ng-controller="AslabCtrl">
+    <ion-pane>
+      <ion-header-bar class="bar-stable bar-calm">
+      <button ng-controller="BackCtrl" ng-click="myGoBack()" class="button button-calm ion-chevron-left"> Kembali</button>
+        <h1 class="title">Asisten Laboratorium</h1>
+      </ion-header-bar>
+      <ion-content>
+        <div class="list" ng-repeat="list_asisten_aslab in asisten_aslab">
+        <div class="row item">
+         <div class="col col-75">
+            <div class="item-avatar">
+              <img src="{{list_asisten_aslab.foto_profil}}">
+              <h2>{{list_asisten_aslab.nama}}</h2><br>
+              <p><a class="icon ion-iphone"></a> {{list_asisten_aslab.hp}}</p>
+              <p><a class="icon ion-email"></a>  {{list_asisten_aslab.email}}</p>
+              <p>LINE ID :  {{list_asisten_aslab.line}}</p>
+              <a href="mailto:{{list_asisten_aslab.email}}" target=”_blank” class="button button-balanced">Tap to email {{list_asisten_aslab.email}}</a><br><br>
+              <a href="tel:{{list_asisten_aslab.hp}}" target=”_blank” class="button button-assertive">Tap to call {{list_asisten_aslab.hp}}</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </ion-content>
+    </ion-pane>
+      <div class="tabs tabs-icon-left tabs-assertive">
+      <a class="tab-item" href="#/">
+      <i class="icon ion-home"></i>
+      Home
+      </a>
+      <a class="tab-item" href="#/asisten">
+      <i class="icon ion-person-stalker"></i>
+      Asisten
+      </a>
+      <a class="tab-item" href="#/tentang">
+      <i class="icon ion-information-circled"></i>
+      Tentang
+      </a>
+    </div>
+  </body>
+</html>
