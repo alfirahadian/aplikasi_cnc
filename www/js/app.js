@@ -10,64 +10,120 @@ var app = angular.module('starter', ['ionic']);
 app.controller('LatihanCtrl', function($http, $scope){
 
   $scope.asisten_riset = [];
-    
-    $http.get('http://localhost/api_asisten/index.php/api/ambil')
+
+  $http.get('http://188.166.244.217/api_asisten/index.php/api/ambil')
       .success(function(response){
          angular.forEach(response, function(data){
           $scope.asisten_riset.push(data);
          });
       });
+
+    $scope.doRefresh = function() {
+    $http.get('http://188.166.244.217/pi_asisten/index.php/api/ambil')
+     .success(function(newItems) {
+       $scope.asisten_riset = newItems;
+     })
+     .finally(function() {
+       // Stop the ion-refresher from spinning
+       $scope.$broadcast('scroll.refreshComplete');
+     });
+  };
 });
 
 app.controller('AslabCtrl', function($http, $scope){
 
   $scope.asisten_aslab = [];
     
-    $http.get('http://localhost/api_asisten/index.php/api/ambilAslab')
+    $http.get('http://188.166.244.217/api_asisten/index.php/api/ambilAslab')
       .success(function(response){
          angular.forEach(response, function(data){
           $scope.asisten_aslab.push(data);
          });
       });
+
+      $scope.doRefresh = function() {
+    $http.get('http://188.166.244.217/api_asisten/index.php/api/ambilAslab')
+     .success(function(newItems) {
+       $scope.asisten_aslab = newItems;
+     })
+     .finally(function() {
+       // Stop the ion-refresher from spinning
+       $scope.$broadcast('scroll.refreshComplete');
+     });
+  };
+
 });
 
 app.controller('KamjarCtrl', function($http, $scope){
 
   $scope.asisten_kamjar = [];
     
-    $http.get('http://localhost/api_asisten/index.php/api/ambilKamjar')
+    $http.get('http://188.166.244.217/api_asisten/index.php/api/ambilKamjar')
       .success(function(response){
          angular.forEach(response, function(data){
           $scope.asisten_kamjar.push(data);
          });
       });
+
+      $scope.doRefresh = function() {
+    $http.get('http://188.166.244.217/api_asisten/index.php/api/ambilKamjar')
+     .success(function(newItems) {
+       $scope.asisten_kamjar = newItems;
+     })
+     .finally(function() {
+       // Stop the ion-refresher from spinning
+       $scope.$broadcast('scroll.refreshComplete');
+     });
+  };
 });
 
 app.controller('BenginproCtrl', function($http, $scope){
 
   $scope.asisten_benginpro = [];
     
-    $http.get('http://localhost/api_asisten/index.php/api/ambilBenginpro')
+    $http.get('http://188.166.244.217/api_asisten/index.php/api/ambilBenginpro')
       .success(function(response){
          angular.forEach(response, function(data){
           $scope.asisten_benginpro.push(data);
          });
       });
+
+      $scope.doRefresh = function() {
+    $http.get('http://188.166.244.217/api_asisten/index.php/api/ambilBenginpro')
+     .success(function(newItems) {
+       $scope.asisten_benginpro = newItems;
+     })
+     .finally(function() {
+       // Stop the ion-refresher from spinning
+       $scope.$broadcast('scroll.refreshComplete');
+     });
+  };
 });
 
 app.controller('AlumniCtrl', function($http, $scope){
 
   $scope.asisten_alumni = [];
     
-    $http.get('http://localhost/api_asisten/index.php/api/ambilAlumni')
+    $http.get('http://188.166.244.217/api_asisten/index.php/api/ambilAlumni')
       .success(function(response){
          angular.forEach(response, function(data){
           $scope.asisten_alumni.push(data);
          });
       });
+
+      $scope.doRefresh = function() {
+    $http.get('http://188.166.244.217/api_asisten/index.php/api/ambilAlumni')
+     .success(function(newItems) {
+       $scope.asisten_alumni = newItems;
+     })
+     .finally(function() {
+       // Stop the ion-refresher from spinning
+       $scope.$broadcast('scroll.refreshComplete');
+     });
+  };
 });
 
-app.controller('BackCtrl', function ($scope, $ionicHistory) {
+app.controller('BackCtrl', function ($scope) {
   $scope.myGoBack = function() {
     //$ionicHistory.goBack();
     window.history.back();

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <title>Kamjar</title>
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -17,6 +17,7 @@
         <h1 class="title">Asisten Kamjar</h1>
       </ion-header-bar>
       <ion-content>
+      <ion-refresher refreshing-text="Loading..." pulling-text="Pull to refresh data.." on-refresh="doRefresh()"></ion-refresher>
         <div class="list" ng-repeat="list_asisten_kamjar in asisten_kamjar">
         <div class="row item">
          <div class="col col-75">

@@ -17,6 +17,7 @@
         <h1 class="title">Asisten Alumni</h1>
       </ion-header-bar>
       <ion-content>
+      <ion-refresher refreshing-text="Loading..." pulling-text="Pull to refresh data.." on-refresh="doRefresh()"></ion-refresher>
         <div class="list" ng-repeat="list_asisten_alumni in asisten_alumni">
         <div class="row item">
          <div class="col col-75">
